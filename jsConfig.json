@@ -1,0 +1,162 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+
+  "general": {
+    "clientSystem": "UnitedUtilities"
+    //"clientSystem": "SouthWestWater"
+  },
+  "UnitedUtilities": {
+    "testEnvironment": "staging",
+    //"testEnvironment": "release",
+    //"testEnvironment": "special",
+    //"testEnvironment": "production", // use with caution!!
+    //"testBrowser": "edge",
+    "testBrowser": "chrome",
+    "user": "craig.mcclelland@jacobs.com",
+    "password": "NSWeeG11!",
+
+    // environment URLs
+    "stagingURL": "https://uu-web2-staging.azurewebsites.net/",
+    "releaseURL": "https://uu-web2-release.azurewebsites.net/",
+    "specialURL": "https://uu-web2-graphtest.azurewebsites.net/",
+    "productionURL": "https://uu.aquadna.net/",
+
+    "stagingAzureEndPointURL": "https://uu-func-backend-win-staging.azurewebsites.net/",
+    "releaseAzureEndPointURL": "https://uu-func-backend-win-release.azurewebsites.net/",
+    "specialAzureEndPointURL": "https://uu-func-backend-win-testing.azurewebsites.net/",
+    "productionAzureEndPointURL": "???",
+
+    // API base urls
+    "stagingAPIBaseURL": "https://uu-api-staging.azurewebsites.net/",
+    "releaseAPIBaseURL": "https://uu-api-release.azurewebsites.net/",
+    "specialAPIBaseURL": "https://uu-api-???.azurewebsites.net/",
+
+
+    // environment DB connectionstrings
+    //TODO: this connection string gives an interactive authentication. Will have to be updated
+    //"stagingDBCnx": "Server=adna-sql.database.windows.net; Authentication=Active Directory Interactive; Database=ADNAStageUnitedUtilities",
+    //"stagingDBCnx": "Server=adna-sql.database.windows.net; Authentication=Active Directory Password;User ID=craig.mcclelland@jacobs.com;Password=ro!!erh0C; Database=ADNAStageUnitedUtilities",
+    "stagingDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAStageUnitedUtilities",
+    "releaseDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAReleaseUnitedUtilities",
+    "specialDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAStageUnitedUtilities",
+    //"productionDBCnx": "Server=adna-sql.database.windows.net; Authentication=Active Directory Interactive; Database=ADNAUnitedUtilities",
+    "productionDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAUnitedUtilities",
+    //"productionDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAUnitedUtilities",
+
+    // endpoint configuration
+    //"alertAutoCloseFunction": "AlertAutoClosureTestHttp",
+    "alertAutoCloseFunction": "AlertAutoClosureHttp",
+    //"stagingAutoCloseAuthCode": "_NoyoDVC_Pj5rjhb3xdgO84oGOf5VDrC6XKyqTCPwDEPAzFuWw-tZQ==",
+    "stagingAutoCloseAuthCode": "jit7NQ1y2YQtsN1AhEI7cov1uA0Ul3c1GAR9hq20HLPTAzFusDI0Aw==",
+    "releaseAutoCloseAuthCode": "8YyY0A9cxzs89EOeqCkeaipvP59S8LlYmRSS8XpcvSIwAzFuIcM2KQ==",
+    "specialAutoCloseAuthCode": "_NoyoDVC_Pj5rjhb3xdgO84oGOf5VDrC6XKyqTCPwDEPAzFuWw-tZQ==",
+
+    //"eventsToAlertsFunction": "EventsToAlertsHttp",
+    "eventsToAlertsFunction": "EventsToAlertsOrchestrator_HttpStart",
+    "stagingE2AAuthCode": "Mh1d_VJyYw_yc6VIq1MesM3PafgQPsC4Bq9KATjt9_l0AzFuPio1lA==",
+    "releaseE2AAuthCode": "vwARh2a4FDCH0BSe-IaDC19I3yOEO8ymS_IuEnCsX5MpAzFu82QhaA==",
+    "specialE2AAuthCode": "Jg9at/vZ9PkXjM8eC7gRx8/GNhbsA92PAXMOO7aCVlkEnorM63YQtQ==",
+
+    "eventIngestionFunction": "UUBusinessRulesHttp",
+    "stagingEventIngestionAuthCode": "ofxyISCHWLw2KaMVENywWw/4KSr6uvWufgLMQag40mz24VXrcheeMg==",
+    "releaseEventIngestionAuthCode": "P3wHuDapHKCmBBq7D2R7CmhacroUSO9x36vedjnRMyluAzFu4U2TcQ==",
+    "specialEventIngestionAuthCode": "???",
+
+    "lossOfCommsFunction": "LossOfCommunicationHttp",
+    "stagingLossOfCommsAuthCode": "tx2DL8m4AXGgQ63_qwnO3dCnZW_SIhyaf-cctmyPpLx9AzFu6qGBfg==",
+    "releaseLossOfCommsAuthCode": "rQll8KHaDFA96ARA7t0DnLSc6RRWcA2C3qMXuhZxclfbAzFuLw__VA==",
+    "specialLossOfCommsAuthCode": "???",
+
+    "vactorNeededFunction": "SuctionSideBlockagesHttp",
+    "stagingVactorNeededAuthCode": "f8onFYBDh5RwnOeDpZHkXDEI_0vf3UZ0hQ3f2ljDlcK8AzFuf9cOOw==",
+    "releaseVactorNeededAuthCode": "ohhWLy0EOrHEgGJz9uk4PFN_WVxahJrXTNaTYOe5q0AQAzFuDMQ_ug==",
+    "specialVactorNeededAuthCode": "???",
+
+    "digitalSpillFunction": "DigitalSpillProcessHttp",
+    "stagingDigitalSpillAuthCode": "TWP_oQmeq2H6ay4MdQMjPDkvuJFR-WDTT16WAFXlTgLFAzFu4cpb1w==",
+    "releaseDigitalSpillAuthCode": "LjVrmBg7Calqh5MxfvKy10wvw5BKubo43QNrZLFfl2RPAzFu4Pqv7g==",
+    "specialDigitalSpillAuthCode": "???",
+
+    "kustoClusterURL": "https://uuade.uksouth.kusto.windows.net"
+  },
+  "SouthWestWater": {
+    "testEnvironment": "staging",
+    //"testEnvironment": "release",
+    //"testEnvironment": "special",
+    //"testEnvironment": "production", // use with caution!!
+    //"testBrowser": "edge",
+    "testBrowser": "chrome",
+    "user": "craig.mcclelland@jacobs.com",
+    "password": "NSWeeG11!",
+
+    // environment URLs
+    "stagingURL": "https://sww-web-staging.azurewebsites.net/",
+    "releaseURL": "https://sww-web.azurewebsites.net/",
+    "specialURL": "??",
+    "productionURL": "https://sww-web.azurewebsites.net/",
+
+    "stagingAzureEndPointURL": "https://sww-func-backend-win-staging.azurewebsites.net/",
+    "releaseAzureEndPointURL": "https://sww-func-backend-win-release.azurewebsites.net/",
+    "specialAzureEndPointURL": "https://sww-func-backend-win-testing.azurewebsites.net/",
+    "productionAzureEndPointURL": "???",
+
+    // API base urls
+    "stagingAPIBaseURL": "https://sww-api-staging.azurewebsites.net/",
+    "releaseAPIBaseURL": "https://sww-api-release.azurewebsites.net/",
+    "specialAPIBaseURL": "https://sww-api-???.azurewebsites.net/",
+
+
+    // environment DB connectionstrings
+    //TODO: this connection string gives an interactive authentication. Will have to be updated
+    "stagingDBCnx": "Server=sww-sql-server.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNASWWstaging",
+    //"stagingDBCnx": "Server=sww-sql-server.database.windows.net; Authentication=Active Directory Interactive; Database=ADNASWW",
+    "releaseDBCnx": "",
+    "specialDBCnx": "",
+    //"productionDBCnx": "Server=adna-sql.database.windows.net; Authentication=Active Directory Interactive; Database=ADNAUnitedUtilities",
+    "productionDBCnx": "Server=sww-sql-server.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNASWW",
+    //"productionDBCnx": "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAUnitedUtilities",
+
+    // endpoint configuration
+    //"alertAutoCloseFunction": "AlertAutoClosureTestHttp",
+    "alertAutoCloseFunction": "AlertAutoClosureHttp",
+    //"stagingAutoCloseAuthCode": "_NoyoDVC_Pj5rjhb3xdgO84oGOf5VDrC6XKyqTCPwDEPAzFuWw-tZQ==",
+    "stagingAutoCloseAuthCode": "jit7NQ1y2YQtsN1AhEI7cov1uA0Ul3c1GAR9hq20HLPTAzFusDI0Aw==",
+    "releaseAutoCloseAuthCode": "8YyY0A9cxzs89EOeqCkeaipvP59S8LlYmRSS8XpcvSIwAzFuIcM2KQ==",
+    "specialAutoCloseAuthCode": "_NoyoDVC_Pj5rjhb3xdgO84oGOf5VDrC6XKyqTCPwDEPAzFuWw-tZQ==",
+
+    //"eventsToAlertsFunction": "EventsToAlertsHttp",
+    "eventsToAlertsFunction": "EventsToAlertsOrchestrator_HttpStart",
+    "stagingE2AAuthCode": "Mh1d_VJyYw_yc6VIq1MesM3PafgQPsC4Bq9KATjt9_l0AzFuPio1lA==",
+    "releaseE2AAuthCode": "vwARh2a4FDCH0BSe-IaDC19I3yOEO8ymS_IuEnCsX5MpAzFu82QhaA==",
+    "specialE2AAuthCode": "Jg9at/vZ9PkXjM8eC7gRx8/GNhbsA92PAXMOO7aCVlkEnorM63YQtQ==",
+
+    "eventIngestionFunction": "UUBusinessRulesHttp",
+    "stagingEventIngestionAuthCode": "ofxyISCHWLw2KaMVENywWw/4KSr6uvWufgLMQag40mz24VXrcheeMg==",
+    "releaseEventIngestionAuthCode": "P3wHuDapHKCmBBq7D2R7CmhacroUSO9x36vedjnRMyluAzFu4U2TcQ==",
+    "specialEventIngestionAuthCode": "???",
+
+    "lossOfCommsFunction": "LossOfCommunicationHttp",
+    "stagingLossOfCommsAuthCode": "tx2DL8m4AXGgQ63_qwnO3dCnZW_SIhyaf-cctmyPpLx9AzFu6qGBfg==",
+    "releaseLossOfCommsAuthCode": "rQll8KHaDFA96ARA7t0DnLSc6RRWcA2C3qMXuhZxclfbAzFuLw__VA==",
+    "specialLossOfCommsAuthCode": "???",
+
+    "vactorNeededFunction": "SuctionSideBlockagesHttp",
+    "stagingVactorNeededAuthCode": "f8onFYBDh5RwnOeDpZHkXDEI_0vf3UZ0hQ3f2ljDlcK8AzFuf9cOOw==",
+    "releaseVactorNeededAuthCode": "ohhWLy0EOrHEgGJz9uk4PFN_WVxahJrXTNaTYOe5q0AQAzFuDMQ_ug==",
+    "specialVactorNeededAuthCode": "???",
+
+    "digitalSpillFunction": "DigitalSpillProcessHttp",
+    "stagingDigitalSpillAuthCode": "??",
+    "releaseDigitalSpillAuthCode": "??",
+    "specialDigitalSpillAuthCode": "???",
+
+    "kustoClusterURL": "https://swwade.uksouth.kusto.windows.net"
+  }
+}
