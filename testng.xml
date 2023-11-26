@@ -12,6 +12,7 @@
 		<parameter name="Password" value="test22"/>
 		<classes>
 			<class name="testNg.Phase2.Parametertest" />
+						<class name="DemoWebShop_Tests.DemoWebShop_Tests" />
 		</classes>
 
 
