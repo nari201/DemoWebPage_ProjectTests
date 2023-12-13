@@ -11,7 +11,7 @@ import TestBase.TestBase;
 public class Google_Tests extends TestBase {
 
 	@Test
-	public void launchGoogleTest() {
+	public void launchGoogleTest() throws ClassNotFoundException {
 
 		launchTestSuite();
 		LaunchGooglePage launch = new LaunchGooglePage();
@@ -21,7 +21,7 @@ public class Google_Tests extends TestBase {
 	}
 	
 	
-	public void launchTestBook() {
+	public void launchTestBook() throws ClassNotFoundException {
 
 		launchTestSuite();
 		LaunchGooglePage launch = new LaunchGooglePage();

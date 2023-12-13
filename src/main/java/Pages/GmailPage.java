@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.asserts.Assertion;
 
+import ConfigData.ConfigData;
 import PageBase.PageClass;
 
 public class GmailPage extends PageClass {
@@ -27,7 +28,12 @@ public class GmailPage extends PageClass {
 
 	}
 
-	public void signIn(String userName, String password) throws InterruptedException {
+	public void signIn() throws InterruptedException {
+		
+		ConfigData config =new ConfigData();
+		
+		String userName = config.getUsername();
+		String password = config.getPassword();
 		
 		asEmail.sendKeys(userName);
 		nextButton.click();
