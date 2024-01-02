@@ -3,6 +3,7 @@ package AquaDNATests;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalTime;
 import java.util.Date;
 
 import org.testng.Assert;
@@ -28,28 +29,29 @@ public class HomePageTests extends TestBase {
 		
 		System.out.println(homePage.getHomepageGreetingActual());
 		
-		System.out.println("Get UserId: "+ Query1());
-		Assert.assertEquals( homePage.getHomepageGreetingActual(),config.dbHomePageGreeting()," Name is not matching with Actual name ");
+		String homePageGreetingExp =  homepageGreetingExpected()+", "+config.userName();
+		
+		Assert.assertEquals( homePage.getHomepageGreetingActual(),homePageGreetingExp," Name is not matching with Actual name ");
 		
 	}
 	private String homepageGreetingExpected()
     {
         Date userZoneTime = getCurrentTimeOfUserTimeZone();
-
+        
+        LocalTime currentTime =  LocalTime.now();
+        		
         String greetingMessage = "";
-        if (userZoneTime.toString().contains("PM"))
-        {
-            if (userZoneTime.getHours() >= 17)
-            {
-                greetingMessage = "Good Evening";
-            }
-            else
+    //    if (userZoneTime.toString().contains("PM")){
+            if (currentTime.getHour() >= 12)
             {
                 greetingMessage = "Good Afternoon";
             }
-        }
-        else if (userZoneTime.toString().contains("AM"))
-        {
+       /*     else if
+            {
+                greetingMessage = "Good Afternoon";
+            }**/
+    //    }
+        else {
             greetingMessage = "Good Morning";
         }
         return greetingMessage;

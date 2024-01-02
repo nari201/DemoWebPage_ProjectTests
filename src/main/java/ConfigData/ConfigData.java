@@ -42,7 +42,7 @@ public class ConfigData {
      public String getADNAPassword() {
          return ADNAPassword;
      }
-     public String name() {
+     public String userName() {
          return userName;
      }
      

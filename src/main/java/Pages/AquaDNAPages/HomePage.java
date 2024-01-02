@@ -19,7 +19,7 @@ public class HomePage extends PageClass {
 	public void loginADNAPage() throws InterruptedException {
 		ConfigData config =new ConfigData();
 		
-		userName().sendKeys(config.getADNAUsername());
+		getUserName().sendKeys(config.getADNAUsername());
 		loginButton().click();
 		Thread.sleep(2000);
 		userPassword().sendKeys(config.getADNAPassword());
@@ -30,7 +30,7 @@ public class HomePage extends PageClass {
 		Thread.sleep(5000);
 	}
 
-	protected WebElement userName() {
+	protected WebElement getUserName() {
 
 		return driver.findElement(By.xpath("//input[@id='inputEmail']"));
 	}
