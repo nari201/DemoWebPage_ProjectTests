@@ -28,7 +28,9 @@ public class TestBase extends ConfigData {
 
 	public void launchTestSuite() throws ClassNotFoundException {
 
-		String browser = getTestBrowser();
+		//String browser = getTestBrowser();
+		
+		String browser = "chrome";
 		
 		loginAsDefaultUser();
 		//connectToDB();
@@ -36,7 +38,7 @@ public class TestBase extends ConfigData {
 		switch (browser) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver",
-					"C://Users//SETTIPN//Selenium_Files/chromedriver_win/chromedriver-win64/chromedriver.exe");
+					"C://Users//SETTIPN//Selenium_Files//chromedriver_win//chromedriver-win64/chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 
@@ -54,8 +56,8 @@ public class TestBase extends ConfigData {
 	@AfterClass
 	public void CloseTestSite() {
 
-		 driver.close();
-		 driver.quit();
+		// driver.close();
+		// driver.quit();
 	}
 
 	public void loginAsDefaultUser() {
@@ -63,10 +65,6 @@ public class TestBase extends ConfigData {
 
 		this.currentUsername = config.getADNAUsername();
 		this.currentUserPassword = config.getADNAPassword();
-
-	}
-
-	public void loginAsUser(String username, String password) {
 
 	}
 
@@ -105,11 +103,7 @@ public class TestBase extends ConfigData {
 			e.printStackTrace();
 		}
 	}
-	 protected void closeDBConnection() throws SQLException
-     {
-         dbConnection.close();
-         
-     }
+	
 	public Date getCurrentTimeOfUserTimeZone() {
 
 		/*

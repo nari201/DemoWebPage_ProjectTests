@@ -1,6 +1,5 @@
 package googleTests;
 
-import org.openqa.selenium.devtools.v117.page.Page;
 import org.testng.annotations.Test;
 
 import PageBase.PageClass;
@@ -19,8 +18,7 @@ public class Google_Tests extends TestBase {
 		launch.launchGoogle();
 		launch.launchTextBook();
 	}
-	
-	
+
 	public void launchTestBook() throws ClassNotFoundException {
 
 		launchTestSuite();
