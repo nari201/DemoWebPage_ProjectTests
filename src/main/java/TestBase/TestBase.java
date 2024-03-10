@@ -17,7 +17,6 @@ public class TestBase extends ConfigData {
 	protected static WebDriver driver;
 	public String currentUsername;
 	public String currentUserPassword;
-
 	public Connection dbConnection;
 	public Connection dbConnection2;
 
