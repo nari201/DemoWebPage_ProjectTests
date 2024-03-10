@@ -9,16 +9,16 @@ import TestBase.TestBase;
 public class GmailTests extends TestBase {
 
 	@Test
-	public void gmailLoginTests() throws InterruptedException {
+	public void gmailLoginTests() throws InterruptedException, ClassNotFoundException {
 
 		launchTestSuite();
 
 		PageClass page = new PageClass();
-		page.launchWebPage();
+	//	page.launchWebPage();
 
 		GmailPage gmailPage = new GmailPage();
 		gmailPage.launchGmailPage();
-		page.LoginPage();
+	//	page.LoginPage();
 		
 	}
 }

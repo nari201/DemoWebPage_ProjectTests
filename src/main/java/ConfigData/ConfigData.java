@@ -3,13 +3,21 @@ package ConfigData;
 public class ConfigData {
 
      public String testEnvironment ="staging" ;
-     public String testBrowser = "edge";
-     public String gmailUser = "settipalli.naresh201@gmail.com";
-     public String gmailPassword ="ns@May08";
+     public String testBrowser = "chrome";
+     public String loginUser =  "venkateshtech1993@gmail.com"; //"settipalli.naresh201@gmail.com";
+     public String loginPassword = "Test@123";//"ns@May08";
      
-    // environment URLs
-    // public String stagingURL ;
-	
+     public String ADNAUsername = "naresh.settipalli@jacobs.com";
+     public String ADNAPassword =   "Test@0813";//"Test@May13";  
+     
+     public String stagingDBConnection =  "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAStageUnitedUtilities";
+     public String stagingSWWDBConnection= "Server=sww-sql-server.database.windows.net:1433; Database=ADNASWWstaging";
+     
+     public String  UserID = "automation";
+     public String  Password ="x3*JG$$53Bu3&%%Y";
+     
+     public String userName = "Naresh";
+     
      // Getter and setter methods for testEnvironment
      public String getTestEnvironment() {
          return testEnvironment;
@@ -18,27 +26,35 @@ public class ConfigData {
      public void setTestEnvironment(String testEnvironment) {
          this.testEnvironment = testEnvironment;
      }
-
-     // Getter and setter methods for testBrowser
      public String getTestBrowser() {
          return testBrowser;
      }
-
-     public void setTestBrowser(String testBrowser) {
-         this.testBrowser = testBrowser;
+     public String getLoginUser() {
+         return loginUser;
      }
-     public String getUsername() {
-         return gmailUser;
+     public String getLoginPassword() {
+         return loginPassword;
      }
-
-     public void setUsername(String user) {
-         this.gmailUser = user;
+     
+     public String getADNAUsername() {
+         return ADNAUsername;
      }
-     public String getPassword() {
-         return gmailPassword;
+     public String getADNAPassword() {
+         return ADNAPassword;
      }
-
-     public void setPassword(String password) {
-         this.gmailPassword = password;
+     public String userName() {
+         return userName;
+     }
+     
+     public String stagingDBConnection() {
+         return stagingDBConnection;
+     }
+     
+     public String stagingSWWDBConnection() {
+         return stagingSWWDBConnection;
+     }
+     public String dbHomePageGreeting() {
+ 		
+         return "Good Evening, Naresh";
      }
 }

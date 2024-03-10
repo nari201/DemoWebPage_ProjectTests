@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoWebShopTests.DemoWebShop_Tests">
+      <class name="Naukri.com.NaukriTest">
         <methods>
+          <include name="ApplyForJobs"/>
+          <include name="LoginTest"/>
           <include name="CloseTestSite"/>
-          <include name="launchDemoWebShop"/>
         </methods>
-      </class> <!-- DemoWebShopTests.DemoWebShop_Tests -->
+      </class> <!-- Naukri.com.NaukriTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ import TestBase.TestBase;
 public class DemoWebShop_Tests extends TestBase {
 
 	@Test
-	public void launchDemoWebShop() {
+	public void launchDemoWebShop() throws ClassNotFoundException {
 		
 		launchTestSuite();
 		LaunchDemoWebShop demoWebShop = new LaunchDemoWebShop();
