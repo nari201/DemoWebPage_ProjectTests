@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 25 11:02:39 IST 2024</td>
+<td>Started on:</td><td>Fri Feb 23 18:56:35 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60957 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43208 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Naukri.com.NaukriTest.LoginTest()'><b>LoginTest</b><br>Test class: Naukri.com.NaukriTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=121.0.6167.86)
+<td title='Naukri.com.NaukriTest.ApplyForJobs()'><b>ApplyForJobs</b><br>Test class: Naukri.com.NaukriTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;styles_jh__right__vRLn9&apos;]//button[contains(text(),&apos;Apply&apos;)]&quot;}
+  (Session info: chrome=122.0.6261.57)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0099615aeacbb7a17d9171e81e892edf, sendKeysToElement {id=022C4DA3DDD4A0F7A4E24D03338E423E_element_74, value=[Ljava.lang.CharSequence;@138a7441}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\SETTIPN\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56235/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0099615aeacbb7a17d9171e81e892edf)] -&gt; xpath: //label[@class=&apos;label&apos; and contains(text(),&apos;Email ID / Username&apos;)]]
-Session ID: 0099615aeacbb7a17d9171e81e892edf
+Command: [b0158eecca5275a7e1a57c9f9e4eca11, findElement {using=xpath, value=//div[@class=&apos;styles_jh__right__vRLn9&apos;]//button[contains(text(),&apos;Apply&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.57, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\SETTIPN\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61074/devtoo..., se:cdpVersion: 122.0.6261.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0158eecca5275a7e1a57c9f9e4eca11
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,11 +98,13 @@ Session ID: 0099615aeacbb7a17d9171e81e892edf
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at Pages.NaukriPage.passNaukriUsername(NaukriPage.java:45)
-	at Pages.NaukriPage.loginNaukri(NaukriPage.java:33)
-	at Naukri.com.NaukriTest.LoginTest(NaukriTest.java:18)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at Pages.NaukriApplyJobsPage.ApplyButton(NaukriApplyJobsPage.java:117)
+	at Pages.NaukriApplyJobsPage.NaukriJobsList(NaukriApplyJobsPage.java:84)
+	at Naukri.com.NaukriTest.ApplyForJobs(NaukriTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,16 +133,16 @@ Session ID: 0099615aeacbb7a17d9171e81e892edf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1562950869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1562950869'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=121.0.6167.86)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1875108260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1875108260'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;styles_jh__right__vRLn9&apos;]//button[contains(text(),&apos;Apply&apos;)]&quot;}
+  (Session info: chrome=122.0.6261.57)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0099615aeacbb7a17d9171e81e892edf, sendKeysToElement {id=022C4DA3DDD4A0F7A4E24D03338E423E_element_74, value=[Ljava.lang.CharSequence;@138a7441}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\SETTIPN\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56235/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0099615aeacbb7a17d9171e81e892edf)] -&gt; xpath: //label[@class=&apos;label&apos; and contains(text(),&apos;Email ID / Username&apos;)]]
-Session ID: 0099615aeacbb7a17d9171e81e892edf
+Command: [b0158eecca5275a7e1a57c9f9e4eca11, findElement {using=xpath, value=//div[@class=&apos;styles_jh__right__vRLn9&apos;]//button[contains(text(),&apos;Apply&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.57, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\SETTIPN\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61074/devtoo..., se:cdpVersion: 122.0.6261.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0158eecca5275a7e1a57c9f9e4eca11
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -153,11 +155,13 @@ Session ID: 0099615aeacbb7a17d9171e81e892edf
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at Pages.NaukriPage.passNaukriUsername(NaukriPage.java:45)
-	at Pages.NaukriPage.loginNaukri(NaukriPage.java:33)
-	at Naukri.com.NaukriTest.LoginTest(NaukriTest.java:18)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at Pages.NaukriApplyJobsPage.ApplyButton(NaukriApplyJobsPage.java:117)
+	at Pages.NaukriApplyJobsPage.NaukriJobsList(NaukriApplyJobsPage.java:84)
+	at Naukri.com.NaukriTest.ApplyForJobs(NaukriTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,8 +191,27 @@ Session ID: 0099615aeacbb7a17d9171e81e892edf
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>60</td>
-<td>Naukri.com.NaukriTest@7526515b</td></tr>
+<td>27</td>
+<td>Naukri.com.NaukriTest@2a265ea9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Naukri.com.NaukriTest.UpdateResumeTest()'><b>UpdateResumeTest</b><br>Test class: Naukri.com.NaukriTest</td>
+<td></td>
+<td>5</td>
+<td>Naukri.com.NaukriTest@2a265ea9</td></tr>
+<tr>
+<td title='Naukri.com.NaukriTest.LoginTest()'><b>LoginTest</b><br>Test class: Naukri.com.NaukriTest</td>
+<td></td>
+<td>9</td>
+<td>Naukri.com.NaukriTest@2a265ea9</td></tr>
 </table><p>
 </body>
 </html>

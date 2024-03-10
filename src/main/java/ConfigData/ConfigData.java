@@ -3,18 +3,18 @@ package ConfigData;
 public class ConfigData {
 
      public String testEnvironment ="staging" ;
-     public String testBrowser = "edge";
-     public String gmailUser = "settipalli.naresh201@gmail.com";
-     public String gmailPassword ="ns@May08";
+     public String testBrowser = "chrome";
+     public String loginUser =  "venkateshtech1993@gmail.com"; //"settipalli.naresh201@gmail.com";
+     public String loginPassword = "Test@123";//"ns@May08";
      
      public String ADNAUsername = "naresh.settipalli@jacobs.com";
-     public String ADNAPassword =  "Test@May13";  
+     public String ADNAPassword =   "Test@0813";//"Test@May13";  
+     
      public String stagingDBConnection =  "Server=adna-sql.database.windows.net; Authentication=Sql Password;User ID=automation;Password=x3*JG$$53Bu3&%%Y; Database=ADNAStageUnitedUtilities";
-    
      public String stagingSWWDBConnection= "Server=sww-sql-server.database.windows.net:1433; Database=ADNASWWstaging";
      
-    public String  UserID = "automation";
-    public String  Password ="x3*JG$$53Bu3&%%Y";
+     public String  UserID = "automation";
+     public String  Password ="x3*JG$$53Bu3&%%Y";
      
      public String userName = "Naresh";
      
@@ -29,11 +29,11 @@ public class ConfigData {
      public String getTestBrowser() {
          return testBrowser;
      }
-     public String getUsername() {
-         return gmailUser;
+     public String getLoginUser() {
+         return loginUser;
      }
-     public String getPassword() {
-         return gmailPassword;
+     public String getLoginPassword() {
+         return loginPassword;
      }
      
      public String getADNAUsername() {

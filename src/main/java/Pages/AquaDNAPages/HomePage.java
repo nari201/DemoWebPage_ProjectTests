@@ -10,10 +10,12 @@ public class HomePage extends PageClass {
 
 	public void launchADNA() throws InterruptedException {
 
-		driver.get("https://sww-web-staging.azurewebsites.net/");
+	//	driver.get("https://sww-web-staging.azurewebsites.net/");
+		driver.get("https://lacsd-web-staging.azurewebsites.net/");
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().getPageLoadTimeout();
-		Thread.sleep(2500);
+		Thread.sleep(2000);
 	}
 
 	public void loginADNAPage() throws InterruptedException {
@@ -27,7 +29,7 @@ public class HomePage extends PageClass {
 		Thread.sleep(3000);
 		skipButton().click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 
 	protected WebElement getUserName() {

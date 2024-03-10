@@ -21,20 +21,18 @@ public class TestBase extends ConfigData {
 	public Connection dbConnection;
 	public Connection dbConnection2;
 
-
 	public enum testEnvironments {
 		staging, release, special, production
 	}
 
 	public void launchTestSuite() throws ClassNotFoundException {
 
-		//String browser = getTestBrowser();
-		
-		String browser = "chrome";
-		
+		ConfigData data = new ConfigData();
+		String browser = getTestBrowser();
+
 		loginAsDefaultUser();
-		//connectToDB();
-		
+		// connectToDB();
+
 		switch (browser) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver",
@@ -56,8 +54,8 @@ public class TestBase extends ConfigData {
 	@AfterClass
 	public void CloseTestSite() {
 
-		// driver.close();
-		// driver.quit();
+	//	driver.close();
+	//	driver.quit();
 	}
 
 	public void loginAsDefaultUser() {
@@ -67,6 +65,19 @@ public class TestBase extends ConfigData {
 		this.currentUserPassword = config.getADNAPassword();
 
 	}
+	
+	public void switchToParentWindow() {
+		
+		
+	}
+	public void switchToTargetWindow() {
+		
+		
+	}
+	public void switchToCloseAllWindows() {
+		
+	}
+
 
 	protected void connectToDB() throws ClassNotFoundException {
 		// TODO: The currently configured connection strings trigger an interactive
@@ -91,19 +102,18 @@ public class TestBase extends ConfigData {
 		// string ConnectionString = @"Server=adna-sql.database.windows.net;
 		// Authentication=Active Directory Interactive;
 		// Database=ADNAStageUnitedUtilities";
-		
+
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			// TODO: is anything required to properly dispose of this?
-			//dbConnection = DriverManager.getConnection(ConnectionString);
-			dbConnection  = DriverManager.getConnection(ConnectionString, UserID, Password);
+			// dbConnection = DriverManager.getConnection(ConnectionString);
+			dbConnection = DriverManager.getConnection(ConnectionString, UserID, Password);
 
-			}
-		catch (SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public Date getCurrentTimeOfUserTimeZone() {
 
 		/*

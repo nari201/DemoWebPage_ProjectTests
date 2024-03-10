@@ -5,6 +5,7 @@
     <classes>
       <class name="Naukri.com.NaukriTest">
         <methods>
+          <include name="ApplyForJobs"/>
           <include name="LoginTest"/>
           <include name="CloseTestSite"/>
         </methods>

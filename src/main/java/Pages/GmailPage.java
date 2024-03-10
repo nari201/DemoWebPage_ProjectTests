@@ -32,8 +32,8 @@ public class GmailPage extends PageClass {
 		
 		ConfigData config =new ConfigData();
 		
-		String userName = config.getUsername();
-		String password = config.getPassword();
+		String userName = config.getLoginUser();
+		String password = config.getLoginPassword();
 		
 		asEmail.sendKeys(userName);
 		nextButton.click();
