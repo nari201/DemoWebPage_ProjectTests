@@ -113,5 +113,10 @@
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.6</version> <!-- Use the latest version -->
 		</dependency>
+		<dependency>
+			<groupId>MavenProj_Automation1</groupId>
+			<artifactId>MavenProj_Automation1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
