@@ -5,7 +5,7 @@ public class ConfigData {
      public String testEnvironment ="staging" ;
      public String testBrowser = "chrome";
      public String loginUser =  "venkateshtech1993@gmail.com"; //"settipalli.naresh201@gmail.com";
-     public String loginPassword = "Test@123";//"ns@May08";
+     public String loginPassword = "Test@123";
      
      public String ADNAUsername = "naresh.settipalli@jacobs.com";
      public String ADNAPassword =   "Test@0813";//"Test@May13";  
