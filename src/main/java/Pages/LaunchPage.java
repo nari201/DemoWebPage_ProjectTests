@@ -3,7 +3,7 @@ package Pages;
 import java.util.concurrent.TimeUnit;
 import PageBase.PageClass;
 
-public class LaunchGooglePage extends PageClass {
+public class LaunchPage extends PageClass {
 
 	public void launchGoogle() {
 

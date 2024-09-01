@@ -5,6 +5,7 @@ import java.util.Date;
 import org.apache.commons.lang3.NotImplementedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import ConfigData.ConfigData;
@@ -28,15 +29,20 @@ public class TestBase extends ConfigData {
 
 		ConfigData data = new ConfigData();
 		String browser = getTestBrowser();
-
+		
+		
+		ChromeOptions co = new ChromeOptions();
+		co.setBrowserVersion("Stable");
+		driver = new ChromeDriver();
+		
 		loginAsDefaultUser();
 		// connectToDB();
 
 		switch (browser) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver",
+	/*		System.setProperty("webdriver.chrome.driver",
 					"C://Users//SETTIPN//Selenium_Files//chromedriver_win//chromedriver-win64/chromedriver.exe");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(); */
 			break;
 
 		case "edge":

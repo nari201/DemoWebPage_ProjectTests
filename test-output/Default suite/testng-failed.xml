@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API.RestAssuredTests.httpRequests">
+      <class name="googleTests.Google_Tests">
         <methods>
-          <include name="getUser"/>
+          <include name="launchGoogleTest"/>
+          <include name="CloseTestSite"/>
         </methods>
-      </class> <!-- API.RestAssuredTests.httpRequests -->
+      </class> <!-- googleTests.Google_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

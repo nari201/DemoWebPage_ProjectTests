@@ -3,8 +3,7 @@ package googleTests;
 import org.testng.annotations.Test;
 
 import PageBase.PageClass;
-import Pages.GmailPage;
-import Pages.LaunchGooglePage;
+import Pages.LaunchPage;
 import TestBase.TestBase;
 
 public class Google_Tests extends TestBase {
@@ -13,7 +12,7 @@ public class Google_Tests extends TestBase {
 	public void launchGoogleTest() throws ClassNotFoundException {
 
 		launchTestSuite();
-		LaunchGooglePage launch = new LaunchGooglePage();
+		LaunchPage launch = new LaunchPage();
 
 		launch.launchGoogle();
 		launch.launchTextBook();
@@ -22,7 +21,7 @@ public class Google_Tests extends TestBase {
 	public void launchTestBook() throws ClassNotFoundException {
 
 		launchTestSuite();
-		LaunchGooglePage launch = new LaunchGooglePage();
+		LaunchPage launch = new LaunchPage();
 
 		launch.launchTextBook();
 	}

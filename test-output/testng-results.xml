@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-10T23:13:31 IST" name="Default suite" finished-at="2024-03-10T23:13:38 IST" duration-ms="6594">
+  <suite started-at="2024-06-30T20:17:51 IST" name="Default suite" finished-at="2024-06-30T20:20:07 IST" duration-ms="136175">
     <groups>
     </groups>
-    <test started-at="2024-03-10T23:13:31 IST" name="Default test" finished-at="2024-03-10T23:13:38 IST" duration-ms="6594">
-      <class name="API.RestAssuredTests.httpRequests">
-        <test-method signature="getUser()[pri:1, instance:API.RestAssuredTests.httpRequests@17f62e33]" started-at="2024-03-10T23:13:31 IST" name="getUser" finished-at="2024-03-10T23:13:34 IST" duration-ms="2996" status="PASS">
+    <test started-at="2024-06-30T20:17:51 IST" name="Default test" finished-at="2024-06-30T20:20:07 IST" duration-ms="136175">
+      <class name="googleTests.Google_Tests">
+        <test-method signature="launchGoogleTest()[pri:0, instance:googleTests.Google_Tests@909217e]" started-at="2024-06-30T20:17:51 IST" name="launchGoogleTest" finished-at="2024-06-30T20:20:07 IST" duration-ms="136107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUser -->
-        <test-method signature="createUser()[pri:2, instance:API.RestAssuredTests.httpRequests@17f62e33]" started-at="2024-03-10T23:13:34 IST" name="createUser" finished-at="2024-03-10T23:13:36 IST" duration-ms="2171" status="PASS">
+        </test-method> <!-- launchGoogleTest -->
+        <test-method is-config="true" signature="CloseTestSite()[pri:0, instance:googleTests.Google_Tests@909217e]" started-at="2024-06-30T20:20:07 IST" name="CloseTestSite" finished-at="2024-06-30T20:20:07 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-        <test-method signature="updateUser()[pri:3, instance:API.RestAssuredTests.httpRequests@17f62e33]" started-at="2024-03-10T23:13:36 IST" name="updateUser" finished-at="2024-03-10T23:13:37 IST" depends-on-methods="API.RestAssuredTests.httpRequests.createUser" duration-ms="643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-        <test-method signature="deleteUser()[pri:4, instance:API.RestAssuredTests.httpRequests@17f62e33]" started-at="2024-03-10T23:13:37 IST" name="deleteUser" finished-at="2024-03-10T23:13:38 IST" depends-on-methods="API.RestAssuredTests.httpRequests.createUser" duration-ms="691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- API.RestAssuredTests.httpRequests -->
+        </test-method> <!-- CloseTestSite -->
+      </class> <!-- googleTests.Google_Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
